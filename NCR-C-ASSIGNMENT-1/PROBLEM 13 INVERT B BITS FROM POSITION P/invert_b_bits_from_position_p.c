@@ -20,8 +20,8 @@ int main()
 }
 void invertponwards(int number,int position,int no_of_bits_to_be_rotated)
 {
-	char binary[32];
-	_itoa_s(number, binary, 32, 2);
+	char binary[33];
+	_itoa_s(number, binary, 33, 2);
 	int no_of_bits_of_binary = strlen(binary);
 	if (no_of_bits_of_binary >= position)
 	{

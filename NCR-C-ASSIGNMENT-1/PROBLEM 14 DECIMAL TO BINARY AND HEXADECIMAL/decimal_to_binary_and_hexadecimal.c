@@ -6,7 +6,7 @@ void itoh(int,char *);
 int main()
 {
 	int decimal = -1;
-	char binary[32],hexadecimal[32];
+	char binary[33],hexadecimal[9];
 	printf("ENTER THE NUMBER TO FIND IT'S BINARY AND HEXADECIMAL REPRESENTAION->");
 	scanf_s("%d",&decimal);
 	itob(decimal,binary);
@@ -18,7 +18,7 @@ void itob(int decimal, char *binary)
 {
 	int decimal_replica = decimal;
 	int i = 0;
-	char binary_rev[32];
+	char binary_rev[33];
 	while (decimal_replica)
 	{
 		int remainder = decimal_replica % 2;
@@ -43,7 +43,7 @@ void itoh(int decimal, char *hexadecimal)
 {
 	int decimal_replica = decimal;
 	int i = 0;
-	char hexadecimal_rev[32];
+	char hexadecimal_rev[9];
 	while (decimal_replica)
 	{
 		int remainder = decimal_replica % 16;
